@@ -22,8 +22,6 @@ softmax <- numer / denom # proportion/weights
 
 y <- c(1e3, 1e3+1, 1e3+2)
 exp(y) 
-
-
 ```
 
 This produces overflow - numbers are too big for the computer
