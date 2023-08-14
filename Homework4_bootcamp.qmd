@@ -1,0 +1,57 @@
+---
+title: "Homework 4: Intro to Probability"
+format: html
+editor: visual
+---
+
+## Intro to Probability: Sample Spaces
+
+For an experiment E, the set of all possible outcomes of E is called the **sample space** and is denoted by the letter S. For a coin-toss experiment, S would be the results "Head" or "Tail", which we may represent by S={H,T}.
+
+Feel free to do this by hand and attach screenshots in the document:
+
+1.  Consider the experiment of dropping an empty red solo cup onto the floor. The red solo cup hits the ground and eventually comes to rest. It could land upside down, right side up, or it could land on its side. Please describe the sample space below:
+
+2.  With more outcomes, the sample space becomes harder to write out. If we were to flip *two* coins, the result could be two heads, two tails, etc. etc. etc. . Please describe the sample space below:\
+
+3.  Consider the sample space for rolling two dice. Please write out and consider the sample space below:\
+
+## Coins
+
+Writing out sample spaces is boring, time consuming, and why do it when you can just command R to do it (well it's good practice and the homework asked you to haha).
+
+1.  Write me a function that flips three coins where the outcomes are "H" or "T" to represent Heads or Tails. In the past, we've used 1 and 0 in our functions, please use "H" and "T" in your function so that we can later calculate the entire sample space. Below is the skeleton of the function to help you:
+
+Note: The first line stores a trio of values, such as *HHT* or *THT*, into a temporary object named `temp`
+
+```{r}
+flip3coins = function() {
+      temp = sample(c(), size=, replace=)
+      paste(temp, collapse="")
+}
+```
+
+Try calling your function `flip3coins()` , you should receive something to the effect of HHH, TTH, etc.
+
+2.  Now let's try to discover the entire sample space of outcomes from flipping three coins. In order to do this, we will call our function, `flip3coins()` a sufficiently large amount of times (say 5,000) so that it is almost surely the case that all the sample points will have been generated.\
+    \
+    Before we do this, write out by hand what you believe the sample space will be:\
+    \
+     S={}.
+
+Describe your function to calculate the sample space below. Please make sure to create a vector to store your results. Once you run your function and store your results in the vector named 'outcome', use `unique()` to calculate your sample space. Compare your results from your simulation to what you wrote above.
+
+```{r}
+
+
+# Create a vector to store the results
+outcomes = vector(length = 5000)
+
+# Do the experiment 5,000 times. You'll have to call your flip3Coins() function you wrote above in your simulation: 
+
+
+
+
+# The unique command prints only the unique outcomes in a vector.
+unique(outcomes)
+```
